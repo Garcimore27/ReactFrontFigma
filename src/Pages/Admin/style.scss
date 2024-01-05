@@ -1,0 +1,284 @@
+.modal {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(#000000, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+
+    &__content {
+        max-height: 800px;
+        max-width: 500px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+
+        form {
+
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            max-width: 380px;
+            margin: 0 auto;
+
+            label{
+                margin-bottom: 5px;
+                margin-top: 10px;
+                background: #FFF;
+                height: 21px;
+                border: none;
+                color: #3D3D3D;
+                font-family: Work Sans;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+
+                input[type="file"] {
+                    display: none;
+                }
+            }
+
+            input{
+                margin-bottom: 20px;
+                background: #FFF;
+                box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+                height: 51px;
+                border: none;
+                font-size: 1.2em;
+            }
+
+            .imgPreview{
+                width: 100%;
+                height: 250px;
+                border-radius: 0.1875rem;
+                background: #E8F1F6;
+                display: flex;
+                // justify-content: center;
+                // align-items:flex-end;
+                padding-bottom: 50px;
+                background-position: center;
+                background-repeat: no-repeat;
+                // background-size: cover;
+                margin-bottom: 20px;
+
+                
+
+                .imgInput svg{
+                    display:flex;
+                    flex-direction: column;
+                    border-radius: 0;
+                    background: none;
+                    position: relative;
+                    top: -2rem;
+                    left: 0;
+                    width: 7rem;
+                    height: 7rem;
+                    margin: 0 4rem;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                }
+
+                .imgInput{
+                    margin-top: 80px;
+                    padding-left: 4rem;
+                }
+
+                .imgInput .typeImage{
+                    display:block;
+                    position: absolute;
+                    color: #444;
+                    margin: 0 auto -1rem 5rem;
+                    // text-align: center;
+                    font-family: Work Sans;
+                    font-size: 0.625rem;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .imgInput #labelImage{
+                    width: 10.8125rem;
+                    height: 2.25rem;
+                    border-radius: 3.125rem;
+                    background: #CBD6DC;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 0 -8rem;
+                    cursor: pointer;
+                    -webkit-border-radius: 1rem;
+                    -moz-border-radius: 1rem;
+                    -ms-border-radius: 1rem;
+                    -o-border-radius: 1rem;
+                    color: #306685;
+                    // text-align: center;
+                    font-family: Work Sans;
+                    font-size: 0.875rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    margin: 0 auto;
+                }
+            }
+
+
+            select{
+                margin-bottom: 20px;
+                background: #FFF;
+                box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.09);
+                height: 51px;
+                border: none;
+                font-size: 1.2em;
+            }
+
+            .line2{
+                width: 100%;
+                height: 1px;
+                background-color: #000;
+                margin: 20px auto 10px auto;
+            }
+
+            .addOK{
+                font-family: 'Syne';
+                font-weight: 700;
+                color: white;
+                background-color: #33a08c;
+                margin: 1px auto;
+                width: 180px;
+                text-align: center;
+
+                padding: 10px 20px;
+            }
+
+            .addPhoto2{
+                font-family: 'Syne';
+                font-weight: 700;
+                color: white;
+                background-color: #1D6154;
+                margin: 1em auto;
+                width: 180px;
+                text-align: center;
+                border-radius: 60px;
+                padding: 10px 20px;
+                cursor: pointer;
+
+            }
+        }
+
+        .line{
+            width: 60%;
+            height: 1px;
+            background-color: #000;
+            margin: 50% auto 10px auto;
+            
+        }
+
+        .addPhoto{
+            font-family: 'Syne';
+            font-weight: 700;
+            color: white;
+            background-color: #1D6154;
+            margin: 3em auto;
+            width: 180px;
+            text-align: center;
+            border-radius: 60px;
+            padding: 10px 20px;
+            cursor: pointer;
+
+        }
+
+        .delete-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            position: relative;
+            top: -90px;
+            right: -480px;
+        }
+
+        &-gallery {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            padding: 20px;
+
+            &>div {
+                position: relative;
+
+                
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 100%;
+                    // cursor: pointer;
+                }
+
+                svg {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    background-color: black;
+                    padding: 5px;
+                    border-radius: 7px;
+                    cursor: pointer;
+
+                    * {
+                        fill: white;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+#portfolio{
+    .titreModif{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            margin-right: 6px;
+            margin-left: 30px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    
+        span {
+            margin-top: 20px;
+            color: #000;
+            text-align: center;
+            font-family: Work Sans;
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            cursor: pointer;
+        }
+
+    }
+
+
+}
