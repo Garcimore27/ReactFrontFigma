@@ -1,3 +1,16 @@
+Partie Front en ReactJs de la reproduction de pages Figma de Sophie Bluel - Architecte d'intérieur
+https://www.figma.com/file/kfKHknHySoTibZfdolGAX6/Sophie-Bluel---Desktop?node-id=2%3A681&mode=dev
+Le but n'est pas une reproduction fidèle mais que les différentes fonctionnalités soient présentes :
+- Page de présentation
+- Section d'affichage de projets (Photo, titre, catégorie)
+- Boutons de catégories permettant de filtrer les projets
+- Formulaire de connexion avec réception et stockage de token
+- Accès page Admin lorsque connecté :
+  - Affichage des projets en miniatures de manière modale
+  - Ajout / Suppression de projets (Photo, titre, catégorie)
+
+La partie backend est fournie en NodeJs avec bdd sqlite
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
