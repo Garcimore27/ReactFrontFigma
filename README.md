@@ -1,6 +1,8 @@
 Partie Front en ReactJs de la reproduction de pages Figma de Sophie Bluel - Architecte d'intérieur
 https://www.figma.com/file/kfKHknHySoTibZfdolGAX6/Sophie-Bluel---Desktop?node-id=2%3A681&mode=dev
 
+![Accueil du site](Figma_Sophie_Bluel.png)
+
 Le but n'est pas une reproduction fidèle mais que les différentes fonctionnalités soient présentes :
 - Page de présentation avec Header et Footer en tant que composants distincts
 - Section d'affichage de projets (Photo, titre, catégorie) sur la page de présentation
